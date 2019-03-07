@@ -1,0 +1,43 @@
+{
+	"pages": [
+		"pages/index/index",
+		"pages/detail/detail",
+		"components/list-row/list-row",
+		"pages/webcome/index",
+		"pages/logs/logs",
+		"pages/my/my"
+	],
+	"window": {
+		"navigationBarBackgroundColor": "#40586d",
+		"navigationBarTextStyle": "white",
+		"navigationBarTitleText": "瓣儿豆 - 电影院",
+		"backgroundColor": "#F8F9FB",
+		"backgroundTextStyle": "dark"
+	},
+	"tabBar": {
+		"color": "#000",
+		"selectedColor": "#2F48A0",
+		"backgroundColor": "#E5E5E5",
+		"list": [
+			{
+				"pagePath": "pages/index/index",
+				"text": "榜单",
+				"iconPath": "images/tab/dianying.png",
+				"selectedIconPath": "images/tab/dianying_hl.png"
+			},
+			{
+				"pagePath": "pages/logs/logs",
+				"text": "搜索",
+				"iconPath": "images/tab/yuedu.png",
+				"selectedIconPath": "images/tab/yuedu_hl.png"
+			},
+			{
+				"pagePath": "pages/my/my",
+				"text": "我的",
+				"iconPath": "images/tab/ciwei.png",
+				"selectedIconPath": "images/tab/ciwei_hl.png"
+			}
+		]
+	},
+	"usingComponents": {}
+}

@@ -1,0 +1,70 @@
+<!--pages/detail/detail.wxml-->
+<view class="detail-wrapper">
+	<view class="detail-shadow-mask" style="background-image: url({{ image }});"></view>
+	<view class="detail-poster">
+		<image class='detail-poster-image' src="{{ image }}"></image>
+	</view>
+	<view class="detail-summary">
+		<!-- 电影名称 -->
+		<view class="detail-summary-title">
+			<text>{{ attrs.title }}</text>
+			<text wx:if="{{ attrs.year }}">({{ attrs.year }})</text>
+		</view>
+		<view>
+			<text class="detail-summary-label">作者</text>
+			<text class='detail-summary-directors'>{{ author }}</text>
+		</view>
+		<view>
+			<text class="detail-summary-label">导演</text>
+			<text class='detail-summary-directors'>{{ attrs.director }}</text>
+		</view>
+		<view>
+			<text class="detail-summary-label">编剧</text>
+			<text class='detail-summary-directors'>{{ attrs.writer }}</text>
+		</view>
+		<view>
+			<text class="detail-summary-label">演员</text>
+			<text class='detail-summary-casts'>{{ attrs.cast }}</text>
+		</view>
+		<view>
+			<text class="detail-summary-label">类型</text>
+			<text class='detail-summary-directors'>{{ attrs.movie_type }}</text>
+		</view>
+		<view>
+			<text class="detail-summary-label">地区</text>
+			<text class='detail-summary-directors'>{{ attrs.country }}</text>
+		</view>
+		<view>
+			<text class="detail-summary-label">语言</text>
+			<text class='detail-summary-directors'>{{ attrs.language }}</text>
+		</view>
+		<view>
+			<text class="detail-summary-label">上映</text>
+			<text class='detail-summary-directors'>{{ attrs.pubdate }}</text>
+		</view>
+		<view>
+			<text class="detail-summary-label">片长</text>
+			<text class='detail-summary-directors'>{{ attrs.movie_duration }}</text>
+		</view>
+		<view>
+			<text class="detail-summary-label">又名</text>
+			<text class='detail-summary-directors'>{{ alt_title }}</text>
+		</view>
+		<view>
+			<text class="detail-summary-label">评分</text>
+			<!-- <text class='detail-summary-average'>{{ rating.average }}</text> -->
+			<!-- 评分组件 -->
+			<rating-star max="{{ rating.max }}" average="{{ rating.average }}"></rating-star>
+		</view>
+	</view>
+	<view class="detail-tags">
+		<text class="detail-label">所属标签</text>
+		<view class="detail-tags-container">
+			<text wx:for="{{ tags }}" class="detail-tags-tag">{{ item.name }}</text>
+		</view>
+	</view>
+	<view class="detail-descript">
+		<text class="detail-label">摘要</text>
+		<text class='detail-descript-summary'>{{ summary }}</text>
+	</view>
+</view>

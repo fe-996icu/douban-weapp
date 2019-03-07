@@ -1,0 +1,14 @@
+.rating-wrapper{
+	display: flex;
+	align-items: center;
+	height: 20px;
+
+}
+.rating-starts{
+	padding: 0 5px;
+	margin-right: 10px;
+}
+.rating-star-icon{
+	height: 12px;
+	width: 12px;
+}

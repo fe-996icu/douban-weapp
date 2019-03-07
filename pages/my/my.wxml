@@ -1,0 +1,7 @@
+<!--pages/my/my.wxml-->
+<view class="list-wrapper">
+	<view class="list-item-group">
+		<text>启用缓存数据</text>
+		<switch checked="{{ useMockData }}" bindchange="mockBtnTap" />
+	</view>
+</view>

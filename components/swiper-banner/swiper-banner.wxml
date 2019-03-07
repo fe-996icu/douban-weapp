@@ -1,0 +1,6 @@
+<!--components/swiper-banner/swiper-banner.wxml-->
+<swiper class="banner-swiper" indicator-dots autoplay bindtap="swiperTap">
+	<swiper-item wx:for="{{ list }}" wx:item="item" wx:key="item.id">
+		<image class="banner-item-image" src="{{ item.images.large }}" data-id="{{ item.id }}" mode="aspectFill"></image>
+	</swiper-item>
+</swiper>

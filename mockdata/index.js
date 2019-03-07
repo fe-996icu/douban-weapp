@@ -1,0 +1,7 @@
+export { default as comingSoon } from './coming-soon'
+export { default as inTheaters } from './in-theaters'
+export { default as newMovie } from './new-movie'
+export { default as top250 } from './top250'
+export { default as usBox } from './us-box'
+export { default as weekly } from './weekly'
+export { default as info } from './info'

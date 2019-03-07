@@ -1,0 +1,24 @@
+<view class="rating-wrapper">
+	<view class='rating-starts'>
+		<!-- 满分10，但满星只显示5颗 -->
+		<block wx:for="{{ max/2 }}" wx:for-index="idx" wx:key="idx">
+			<!-- 传入评分和当前索引，计算后导出导出“星星”图片地址 -->
+			<wxs module="getStarSrc">
+				module.exports = function(average, idx){
+					var noneStar = '';
+
+					// 四舍五入评分
+					if(idx+1 > Math.round(average/2)){
+						noneStar = 'none-';
+					}
+					
+					return '/images/icon/' + noneStar + 'star.png';
+				};
+			</wxs>
+			<!-- 当前评分/2,就是约等于星级 -->
+			<image class="rating-star-icon" src="{{ getStarSrc(average, idx) }}"></image>
+		</block>
+	</view>
+	<!-- 评分数 -->
+	<text class="rating-grade">{{ average }}</text>
+</view>

@@ -1,0 +1,18 @@
+
+<view class='list-row-comps'>
+	<view class='list-row-head'>
+		<text class='list-row-title'>{{ title || '玩命加载中...' }}</text>
+		<image class='icon-more' src='/images/icon/arrow-right.png'></image>
+	</view>
+	<scroll-view class='list-row-gallery' scroll-x="{{true}}">
+		<view class='list-row-item' wx:for="{{ subjects }}" wx:item="item" wx:key="item.id">
+			<view class='list-row-item-content' bindtap="toDetail" data-id="{{ item.id }}">
+				<image class='list-row-item-thumb' mode="aspectFill" src='{{ item.images.large }}'></image>
+				<text class='list-row-item-title'>{{ item.title }}</text>
+
+				<!-- 评分模版 -->
+				<rating-star max="{{ item.rating.max }}" average="{{ item.rating.average }}"></rating-star>
+			</view>
+		</view>
+	</scroll-view>
+</view>

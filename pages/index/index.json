@@ -1,0 +1,6 @@
+{
+	"usingComponents": {
+		"list-row": "../../components/list-row/list-row",
+		"swiper-banner": "../../components/swiper-banner/swiper-banner"
+	}
+}

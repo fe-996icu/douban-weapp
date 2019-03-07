@@ -1,0 +1,80 @@
+/* pages/detail/detail.wxss */
+.detail-shadow-mask{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: -1;
+	background-size: cover;
+	background-repeat: no-repeat;
+	opacity: 0.15;
+}
+
+.detail-wrapper{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color: #999C9F;
+	padding: 40px 0 60px;
+}
+
+/*主图*/
+.detail-poster-image{
+	width: 540rpx;
+	height: 794rpx;
+}
+
+/*阵容区域*/
+.detail-summary{
+	width: 540rpx;
+	display: flex;
+	flex-direction: column;
+}
+.detail-summary>view{
+	display: flex;
+	margin: 0 0 10px 0;
+}
+.detail-summary-label{
+	width: 3em;
+	flex-shrink: 0;
+}
+.detail-summary-title{
+	font-size: 14px;
+	font-weight: bold;
+	align-self: center;
+	color: rgba(0, 0, 0, 0.7);
+	margin: 5px 0;
+}
+
+.detail-tags{
+	width: 600rpx;
+	display: flex;
+	flex-direction: column;
+}
+.detail-tags-tag{
+	display: inline-block;
+	background-color: #F1F0F1;
+	border: 1px solid #969696;
+	color: #aaa;
+	border-radius: 5px;
+	padding: 5px;
+	margin: 0 5px 10px 0;
+}
+
+/*摘要区域*/
+.detail-descript{
+	display: flex;
+	flex-direction: column;
+	width: 600rpx;
+}
+.detail-label{
+	font-size: 14px;
+	font-weight: bold;
+	margin: 5px 0 10px 0;
+	color: rgba(0, 0, 0, 0.7);
+}
+.detail-descript-summary{
+	text-indent: 2em;
+	line-height: 1.8;
+}

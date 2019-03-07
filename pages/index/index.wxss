@@ -1,0 +1,12 @@
+/* pages/index/index.wxss */
+
+list-row{
+	display: block;
+	margin-top: 20px;
+	margin-bottom: 10px;
+	background-color: #FFF;
+}
+
+page{
+	background-color: #F2F2F2;
+}

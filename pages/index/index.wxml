@@ -1,0 +1,12 @@
+
+
+<view>
+	<view>
+		<swiper-banner list="{{ bannerList }}"></swiper-banner>
+		<list-row title="{{ inTheaters.title }}" subjects="{{ inTheaters.subjects }}"></list-row>
+		<list-row title="{{ comingSoon.title }}" subjects="{{ comingSoon.subjects }}"></list-row>
+		<list-row title="{{ newMovie.title }}" subjects="{{ newMovie.subjects }}"></list-row>
+		<list-row title="{{ top250.title }}" subjects="{{ top250.subjects }}"></list-row>
+	</view>
+</view>
+

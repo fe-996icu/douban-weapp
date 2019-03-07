@@ -1,0 +1,48 @@
+.list-row-comps{
+	display: flex;
+	flex-direction: column;
+}
+.list-row-head{
+	height: 40px;
+	/* background: yellow; */
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 8px;
+}
+
+.list-row-head .icon-more{
+	width: 6px;
+	height: 12px;
+}
+
+.list-row-gallery{
+	white-space: nowrap;
+	overflow: hidden;
+	min-height: 400rpx;
+}
+
+.list-row-item{
+	display: inline-block;
+	font-size: 12px;
+	padding: 0 3px;
+}
+
+.list-row-item-content{
+	display: flex;
+	flex-direction: column;
+}
+
+.list-row-item-thumb{
+	width: 210rpx;
+	height: 310rpx;
+}
+
+.list-row-item-title{
+	padding-left: 5px;
+	height: 25px;
+	line-height: 25px;
+	/* background: yellow; */
+}
+
