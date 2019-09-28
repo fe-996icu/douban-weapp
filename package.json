@@ -4,7 +4,7 @@
   "description": "",
   "main": "app.js",
   "dependencies": {
-    "regenerator-runtime": "^0.13.1"
+    "regenerator-runtime": "0.13.1"
   },
   "devDependencies": {},
   "scripts": {
